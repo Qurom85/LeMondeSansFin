@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Monde Sans Fin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Le Monde Sans Fin</h1>
+    <div id="instructions" class="hidden">
+        <h2>Instructions du Jeu</h2>
+        <p>Bienvenue dans "Le Monde Sans Fin" ! Voici comment jouer :</p>
+        <ul>
+            <li>Déplacez votre personnage avec les touches fléchées du clavier.</li>
+            <li>Appuyez sur la barre d'espace pour tirer un projectile et éliminer les monstres.</li>
+            <li>Chaque monstre éliminé augmente votre score de 10 points.</li>
+            <li>Évitez les monstres et tentez de survivre aussi longtemps que possible.</li>
+            <li>Vous avez 5 vies, mais chaque coup de monstre vous fait perdre une demi-vie.</li>
+            <li>Le but est d’atteindre le plus haut score possible !</li>
+        </ul>
+        <button id="closeInstructions">J'ai compris</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <button id="startButton">Commencer le Jeu</button>
+    <div id="leaderboard">
+        <h2>Tableau des Meilleurs Joueurs</h2>
+        <ul id="leaderboardList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
